@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+.container,
+.discovery-area {
+  width: 1020px;
+  margin: 0 auto;
+}
+.discovery-area {
+  margin-bottom: 100px;
+}
+header img {
+  width: 176px;
+  height: 40px;
+  margin: 100px 0 48px;
+}
+a {
+  text-decoration: none;
+}
