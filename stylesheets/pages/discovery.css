@@ -1,3 +1,10 @@
+/* 카테고리 분류 선 */
+.discovery-item.women {
+  border-top: 2px solid var(--color-red-300);
+}
+.discovery-item.men {
+  border-top: 2px solid var(--color-blue-600);
+}
 /* 타이틀 제목 */
 .discovery-title-area {
   font-weight: 500;
@@ -20,6 +27,7 @@
   padding-left: 48px;
 }
 .discovery-item {
+  position: relative;
   width: 1020px;
   height: 601px;
   background-color: var(--color-white);
@@ -40,36 +48,55 @@
 .category-title-text.women {
   color: var(--color-red-300);
 }
+.category-title-text.men {
+  color: var(--color-blue-600);
+}
 .discovery-category-title > .shortcuts {
   font-size: 11px;
   color: var(--color-gray-500);
 }
-.discovery-category-keyword {
+.discovery-category-keyword.women {
   padding: 22px 10px;
   width: 124px;
   height: 241px;
   position: absolute;
   top: 315px;
 }
-.discovery-item.discovery-women-clothing {
-  border-top: 2px solid var(--color-red-300);
+.discovery-category-keyword.men {
+  padding: 22px 10px;
+  width: 124px;
+  height: 205px;
+  position: absolute;
+  top: 351px;
 }
-.discovery-women-clothing .keyword {
-  color: var(--color-red-300);
+.keyword {
   font-size: 12px;
   line-height: 28px;
   margin-top: 6px;
   padding: 0 10px;
   display: inline-block;
+}
+.keyword.women {
+  color: var(--color-red-300);
   border: 1px solid var(--color-red-300);
 }
-.discovery-women-clothing .keyword:hover {
+.keyword.men {
+  color: var(--color-blue-600);
+  border: 1px solid var(--color-blue-600);
+}
+.keyword.women:hover {
   background-color: var(--color-red-300);
 }
-.discovery-women-clothing .keyword > a {
+.keyword.men:hover {
+  background-color: var(--color-blue-600);
+}
+.keyword.women > a {
   color: var(--color-red-300);
 }
-.discovery-women-clothing .keyword:hover > a {
+.keyword.men > a {
+  color: var(--color-blue-600);
+}
+.keyword:hover > a {
   color: var(--color-white);
 }
 .discovery-category {
@@ -77,21 +104,27 @@
   width: 146px;
   height: 601px;
 }
-.discovery-item.discovery-men-clothing {
-  border-top: 2px solid var(--color-blue-600);
-}
-.discovery-titleimage {
-  position: relative;
-}
-.discovery-titletext {
+.discovery-titletext.women {
   display: block;
   width: 237px;
   height: 60px;
-  bottom: 100px;
+  bottom: 50px;
   margin: 450px 0 0 22px;
   padding: 20px 22px 0 22px;
   position: absolute;
   background-color: var(--color-red-300);
+  color: white;
+  text-align: center;
+}
+.discovery-titletext.men {
+  display: block;
+  width: 237px;
+  height: 60px;
+  bottom: 50px;
+  margin: 450px 0 0 22px;
+  padding: 20px 22px 0 22px;
+  position: absolute;
+  background-color: var(--color-blue-600);
   color: white;
   text-align: center;
 }
@@ -119,11 +152,17 @@
 }
 .subitem-text {
   font-size: 12px;
-  color: black;
+  color: var(--color-black);
 }
 .discovery-subitemlist > li > a:hover .subitem-text {
   color: var(--color-blue-600);
   text-decoration: underline;
+}
+.instant-discount {
+  display: block;
+  margin: 2px 0 -3px 0;
+  font-size: 12px;
+  color: var(--color-red-600);
 }
 .seller-rocket {
   width: 69.3px;
@@ -164,5 +203,5 @@
   border-radius: 50%;
 }
 .dot-navi li:nth-child(1) {
-  background-color: var(--color-gray-700);
+  background-color: var(--color-gray-600);
 }
