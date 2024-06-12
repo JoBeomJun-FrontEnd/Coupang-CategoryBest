@@ -19,3 +19,6 @@ header img {
 a {
   text-decoration: none;
 }
+.bold-text {
+  font-weight: bold;
+}

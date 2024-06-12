@@ -32,6 +32,18 @@
   padding-top: 40px;
   padding-left: 22px;
 }
+.category-title-text {
+  font-size: 28px;
+  width: 114px;
+  line-height: 28.5px;
+}
+.category-title-text.women {
+  color: var(--color-red-300);
+}
+.discovery-category-title > .shortcuts {
+  font-size: 11px;
+  color: var(--color-gray-500);
+}
 .discovery-category-keyword {
   padding: 22px 10px;
   width: 124px;
@@ -51,15 +63,106 @@
   display: inline-block;
   border: 1px solid var(--color-red-300);
 }
-.discovery-women-clothing .keyword a {
+.discovery-women-clothing .keyword:hover {
+  background-color: var(--color-red-300);
+}
+.discovery-women-clothing .keyword > a {
   color: var(--color-red-300);
+}
+.discovery-women-clothing .keyword:hover > a {
+  color: var(--color-white);
 }
 .discovery-category {
   position: relative;
-  border: 1px solid blue;
   width: 146px;
   height: 601px;
 }
 .discovery-item.discovery-men-clothing {
   border-top: 2px solid var(--color-blue-600);
+}
+.discovery-titleimage {
+  position: relative;
+}
+.discovery-titletext {
+  display: block;
+  width: 237px;
+  height: 60px;
+  bottom: 100px;
+  margin: 450px 0 0 22px;
+  padding: 20px 22px 0 22px;
+  position: absolute;
+  background-color: var(--color-red-300);
+  color: white;
+  text-align: center;
+}
+.discovery-subitemlist {
+  width: 548px;
+  height: 582px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discovery-subitemlist > li {
+  width: 182px;
+  height: 291px;
+  list-style: none;
+}
+.discovery-subitemlist > li > a {
+  display: block;
+  width: 160px;
+  height: 269px;
+  padding: 22px 7px 0 15px;
+  border-bottom: 1px solid var(--color-gray-500);
+}
+.subitem {
+  width: 160px;
+  height: 160px;
+}
+.subitem-text {
+  font-size: 12px;
+  color: black;
+}
+.discovery-subitemlist > li > a:hover .subitem-text {
+  color: var(--color-blue-600);
+  text-decoration: underline;
+}
+.seller-rocket {
+  width: 69.3px;
+  height: 14px;
+}
+.rocket {
+  width: 56px;
+  height: 14px;
+}
+.subitem-text {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 1px;
+  line-height: 14px;
+  width: 160px;
+  height: 28px;
+}
+.subitem-price {
+  width: 160px;
+  height: 16px;
+  margin-top: 3px;
+  color: var(--color-black);
+}
+.dot-navi {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  list-style: none;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.dot-navi > li {
+  background-color: var(--color-opacity-20);
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.dot-navi li:nth-child(1) {
+  background-color: var(--color-gray-700);
 }
