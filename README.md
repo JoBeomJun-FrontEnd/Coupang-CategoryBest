@@ -8,15 +8,10 @@
 <br/>
 📌 Point
 
-- 시멘틱 마크엄
+- HTML과 CSS의 사용법을 익히기 위한 쿠팡 웹페이지 클론 코딩
 
 <br/>
 🔨 Tech
 
-- HTML5
-- CSS3
-
-<br/>
-예상 추가 작업
-
-- 좌측에 nav-bar 제작 예정
+- HTML
+- CSS
